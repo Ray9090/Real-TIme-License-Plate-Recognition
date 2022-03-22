@@ -2,32 +2,32 @@
 Raspberryi pi and Python based Real Time License Plare Recognition
 
 All dependecny or package I needed:
-sudo apt update
-sudo apt full-upgrade
-sudo apt-get install libhdf5-dev -y 
-sudo apt-get install libhdf5-serial-dev –y 
-sudo apt-get install libatlas-base-dev –y 
-sudo apt-get install libjasper-dev -y
-sudo apt-get install libqtgui4 –y
-sudo apt-get install libqt4-test –y
-pip3 install opencv-contrib-python==4.1.0.25
-sudo apt-get install tesseract-ocr
-pip3 install pytesseract
-pip3 install pyttsx3
-pip3 install imutils
-sudo apt-get install ssmtp
+1. sudo apt update
+2. sudo apt full-upgrade
+3. sudo apt-get install libhdf5-dev -y 
+4. sudo apt-get install libhdf5-serial-dev –y 
+5. sudo apt-get install libatlas-base-dev –y 
+6. sudo apt-get install libjasper-dev -y
+7. sudo apt-get install libqtgui4 –y
+8. sudo apt-get install libqt4-test –y
+9. pip3 install opencv-contrib-python==4.1.0.25
+10. sudo apt-get install tesseract-ocr
+11. pip3 install pytesseract
+12. pip3 install pyttsx3
+13. pip3 install imutils
+14. sudo apt-get install ssmtp
 
 Set up email into configure file:
-sudo nano /etc/ssmtp/ssmtp.conf
+1. sudo nano /etc/ssmtp/ssmtp.conf
 
 added these lines
 
-root=postman
-mailhub=smpt.gmail.com:587
-AuthUser=myemail@gmail.com
-AuthPass=myemailpassword
-FromLineOverride=YES
-UseSTARTTLS=YES
+1. root=postman
+2. mailhub=smpt.gmail.com:587
+3. AuthUser=myemail@gmail.com
+4. AuthPass=myemailpassword
+5. FromLineOverride=YES
+6. UseSTARTTLS=YES
 
 Troubleshooting: 
 1. Syntext error: typeerror sendmail() missing 1 required positional argument 'msg'
